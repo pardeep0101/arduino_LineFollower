@@ -176,9 +176,8 @@ int main(void) {
 			car_motor_stop();
 			_delay_ms(8000);
 
-			// move it straight by passing '0' to the motor scheduler
-			car_motor(1);
-			_delay_ms(1000);
+			// move it right by passing '1' to the motor scheduler
+			car_motor(1);			_delay_ms(1000);
 
 			// set the 'tookTurn' to true, so we can inform our Fault Tolerance module to set us back on the line
 			tookTurn = true;
